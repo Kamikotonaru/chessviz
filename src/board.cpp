@@ -1,5 +1,5 @@
 #include <iostream>
-#indlude <cstring>
+#include <cstring>
 
 int CheckInput(char *steps)
 {
