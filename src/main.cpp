@@ -58,6 +58,8 @@ int main()
 	if(CheckInput(steps))
 		Move(steps,chess_borad);
 	else printf("Error input, try again");
+	
+	PrintBoard(chess_borad);
 
 	return 0;
 }
