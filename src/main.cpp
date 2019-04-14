@@ -53,7 +53,11 @@ int main()
 	char *charThereB = strtok(thereBlack,"12345678");
 	char *intThereB = strtok(thereIntB,"abcdefgh");
 	
-	Move(charHereW,intHereW,charThereW,intThereW,charHereB,intHereB,charThereB,intThereB,chess_borad);
+	char steps[] = {*(charHereW),*(intHereW),*(charThereW),*(intThereW),*(charHereB),*(intHereB),*(charThereB),*(intThereB)};
 	
+	if(CheckInput(steps))
+		Move(charHereW,intHereW,charThereW,intThereW,charHereB,intHereB,charThereB,intThereB,chess_borad);
+	else printf("Error input, try again");
+
 	return 0;
 }
