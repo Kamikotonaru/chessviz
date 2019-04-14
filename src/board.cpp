@@ -1,3 +1,68 @@
+#include <iostream>
+#indlude <cstring>
+
+int CheckInput(char *steps)
+{
+	int len = strlen(steps);
+	for(int i = 0; i < len; i++)
+	{
+	switch(steps[i])
+		{
+			case 'a':
+			
+				break;
+			case 'b':
+				
+				break;
+			case 'c':
+				
+				break;
+			case 'd':
+				
+				break;
+			case 'e':
+			
+				break;
+			case 'f':
+				
+				break;
+			case 'g':
+			
+				break;
+			case 'h':
+				
+				break;
+			case '1':
+				
+				break;
+			case '2':
+			
+				break;
+			case '3':
+				
+				break;
+			case '4':
+				
+				break;
+			case '5':
+			
+				break;
+			case '6':
+			
+				break;
+			case '7':
+			
+				break;
+			case '8':
+				
+				break;
+			default:
+				return 0;
+				break;
+		}
+	}
+}
+
 void Move(char *charHereW, char* intHereW, char *charThereW, char *intThereW, char *charHereB, char *intHereB, char *charThereB, char *intThereB, char (*chessB)[9])
 {	
 	char a[] = {*(charHereW),*(intHereW),*(charThereW),*(intThereW),*(charHereB),*(intHereB),*(charThereB),*(intThereB)};
