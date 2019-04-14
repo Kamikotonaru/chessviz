@@ -63,11 +63,11 @@ int CheckInput(char *steps)
 	}
 }
 
-void Move(char *charHereW, char* intHereW, char *charThereW, char *intThereW, char *charHereB, char *intHereB, char *charThereB, char *intThereB, char (*chessB)[9])
+void Move(char *steps, char (*chessB)[9])
 {	
-	char a[] = {*(charHereW),*(intHereW),*(charThereW),*(intThereW),*(charHereB),*(intHereB),*(charThereB),*(intThereB)};
 	int xy[8];
-	for(int i = 0; i < 8; i++)
+	int len = strlen(step)
+	for(int i = 0; i < len; i++)
 	{
 		switch(a[i])
 		{
