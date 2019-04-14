@@ -52,6 +52,7 @@ int main()
 	char *charThereB = strtok(thereBlack,"12345678");
 	char *intThereB = strtok(thereIntB,"abcdefgh");
 	
+	Move(charHereW,intHereW,charThereW,intThereW,charHereB,intHereB,charThereB,intThereB,chess_borad);
 	
 	return 0;
 }
