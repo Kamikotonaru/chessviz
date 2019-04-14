@@ -1,7 +1,7 @@
 #include <cstring>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "board.h"
 int main() 
 {
 	char chess_borad[9][9] = {{'8', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
@@ -51,6 +51,7 @@ int main()
 
 	char *charThereB = strtok(thereBlack,"12345678");
 	char *intThereB = strtok(thereIntB,"abcdefgh");
+	
 	
 	return 0;
 }
