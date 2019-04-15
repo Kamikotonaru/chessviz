@@ -1,6 +1,5 @@
-#include <cstring>
-#include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
+#include <iostream>
 #include "board.h"
 #include "board_print_plain.h"
 int main() 
@@ -17,7 +16,7 @@ int main()
 
 	char step[80];
 	printf("Input step\n");
-	puts(step);
+	gets(step);
   
 	char *stepBlack = strtok(step, " ");
     char *stepWhite = stepBlack;
@@ -55,9 +54,13 @@ int main()
 	
 	char steps[] = {*(charHereW),*(intHereW),*(charThereW),*(intThereW),*(charHereB),*(intHereB),*(charThereB),*(intThereB)};
 	
-	if(CheckInput(steps))
+	int i = 1;
+	i = CheckInput(steps);
+	printf("\n %d",i);
+	
+	if(i == 1)
 		Move(steps,chess_borad);
-	else printf("Error input, try again");
+	else if(i == 0) printf("Error input, try again");
 	
 	PrintBoard(chess_borad);
 
