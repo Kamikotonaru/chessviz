@@ -1,5 +1,3 @@
-#include <string.h>
-#include <iostream>
 
 int CheckInput(char *stepis)
 {
