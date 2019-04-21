@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstdio>
+#include <string.h>
 #include "board.h"
 #include "board_print_plain.h"
 using namespace std;
