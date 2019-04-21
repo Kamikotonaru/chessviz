@@ -1,65 +1,64 @@
-#include <cstring>
+#include <string.h>
 #include <iostream>
 
 int CheckInput(char *stepis)
 {
-	int len = strlen(stepis);
 	int flag = 1;
-	for(int i = 0; i < len; i++)
+	for(int i = 0; i < 8; i++)
 	{
-		switch(stepis[i])
+		switch((char)stepis[i])
 		{
 			case 'a':
 				flag = 1;
-				break;
+			break;
 			case 'b':
 				flag = 1;
-				break;
+			break;
 			case 'c':
 				flag = 1;
-				break;
+			break;
 			case 'd':
 				flag = 1;
-				break;
+			break;
 			case 'e':
 				flag = 1;
-				break;
+			break;
 			case 'f':
 				flag = 1;
-				break;
+			break;
 			case 'g':
 				flag = 1;
-				break;
+			break;
 			case 'h':
 				flag = 1;
-				break;
+			break;
 			case '1':
 				flag = 1;
-				break;
+			break;
 			case '2':
 				flag = 1;
 				break;
 			case '3':
 				flag = 1;
-				break;
+			break;
 			case '4':
 				flag = 1;
-				break;
+			break;
 			case '5':
 				flag = 1;
-				break;
+			break;
 			case '6':
 				flag = 1;
-				break;
+			break;
 			case '7':
 				flag = 1;
-				break;
+			break;
 			case '8':
 				flag = 1;
-				break;
+			break;
 			default:
 				flag = 0;
-				break;
+			break;
 		}
 		if(flag == 0) return 0;
 	}
@@ -69,8 +68,7 @@ int CheckInput(char *stepis)
 void Move(char *steps, char (*chessB)[9])
 {	
 	int xy[8];
-	int len = strlen(steps);
-	for(int i = 0; i < len; i++)
+	for(int i = 0; i < 8; i++)
 	{
 		switch(steps[i])
 		{

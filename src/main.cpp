@@ -1,9 +1,9 @@
-#include <string.h>
-#include <iostream>
 #include "board.h"
 #include "board_print_plain.h"
-int main() 
-{
+#include <cstring>
+#include <iostream>
+
+int main() {
 	char chess_borad[9][9] = {{'8', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
                             {'7', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
                             {'6', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
@@ -14,10 +14,10 @@ int main()
                             {'1', 'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'},
                             {' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'}};
 
-	char step[80];
+	char *step = new char[80];
 	printf("Input step\n");
 	gets(step);
-  
+	
 	char *stepBlack = strtok(step, " ");
     char *stepWhite = stepBlack;
 	stepBlack = strtok(NULL," ");
@@ -52,17 +52,19 @@ int main()
 	char *charThereB = strtok(thereBlack,"12345678");
 	char *intThereB = strtok(thereIntB,"abcdefgh");
 	
-	char steps[] = {*(charHereW),*(intHereW),*(charThereW),*(intThereW),*(charHereB),*(intHereB),*(charThereB),*(intThereB)};
+	char stepis[] = {*(charHereW),*(intHereW),*(charThereW),*(intThereW),*(charHereB),*(intHereB),*(charThereB),*(intThereB)};
 	
 	int i = 1;
-	i = CheckInput(steps);
-	printf("\n %d",i);
-	
-	if(i == 1)
-		Move(steps,chess_borad);
-	else if(i == 0) printf("Error input, try again");
-	
-	PrintBoard(chess_borad);
+	i = CheckInput(stepis);
+	printf("\n %d\n", i);
 
+	if (i == 1)
+		Move(stepis, chess_borad);
+	else if (i == 0)
+		printf("Error input, try again");
+
+	PrintBoard(chess_borad);
+	
+	delete step;	
 	return 0;
 }
