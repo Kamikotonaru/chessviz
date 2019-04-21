@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <cstdio>
+#include <cstring>
 #include "board.h"
 #include "board_print_plain.h"
 
