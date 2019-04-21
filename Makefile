@@ -18,4 +18,4 @@ build\board_print_plain.o:src\board_print_plain.cpp
 .PHONY:clean
 
 clean:
-	rm -rf build\*.o bin\chessS
+	rm -rf build\*.o bin\chess.exe
