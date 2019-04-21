@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstring>
+#include <string.h>
 #include "board.h"
 #include "board_print_plain.h"
 using namespace std;
@@ -56,7 +56,6 @@ int main() {
 	
 	int i = 1;
 	i = CheckInput(stepis);
-	printf("\n %d\n", i);
 
 	if (i == 1)
 		Move(stepis, chess_borad);
