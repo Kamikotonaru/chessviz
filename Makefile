@@ -1,9 +1,9 @@
 PP = g++
 CFLAGS = -c -Wall -Werror
 
-all:bin\chess.exe
+all:bin\chess
 
-bin\chess.exe:build\main.o build\board.o build\board_print_plain.o
+bin\chess:build\main.o build\board.o build\board_print_plain.o
 	$(PP) -Wall -Werror build\main.o build\board.o build\board_print_plain.o -o $@
 	
 build\main.o:src\main.cpp

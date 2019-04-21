@@ -16,7 +16,8 @@ int main() {
 
 	char *step = new char[80];
 	printf("Input step\n");
-	gets(step);
+	std::cin.getline(step,80);
+	
 	
 	char *stepBlack = strtok(step, " ");
     char *stepWhite = stepBlack;
