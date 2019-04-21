@@ -1,8 +1,8 @@
-#include <cstdio>
+#include <iostream>
 #include <cstring>
 #include "board.h"
 #include "board_print_plain.h"
-
+using namespace std;
 int main() {
 	char chess_borad[9][9] = {{'8', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
                             {'7', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
@@ -15,7 +15,7 @@ int main() {
                             {' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'}};
 
 	char *step = new char[80];
-	printf("Input step\n");
+	cout<<"Input step"<<endl;
 	gets(step);
 	
 	char *stepBlack = strtok(step, " ");
