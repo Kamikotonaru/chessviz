@@ -1,7 +1,7 @@
 #include "board.h"
 #include "board_print_plain.h"
-#include <cstring>
-#include <iostream>
+#include <string.h>
+#include <stdio.h>
 
 int main() {
 	char chess_borad[9][9] = {{'8', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
