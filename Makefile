@@ -1,21 +1,8 @@
-PP = g++
-CFLAGS = -c -Wall -Werror
-
-all:bin\chess.exe
-
-bin\chess.exe:build\main.o build\board.o build\board_print_plain.o
-	$(PP) -Wall -Werror build\main.o build\board.o build\board_print_plain.o -o $@
+all:
+	g++ -o stdout -Wall -Werror stdout.cpp
 	
-build\main.o:src\main.cpp
-	$(PP) $(CFLAGS) src\main.cpp -o $@
-
-build\board.o:src\board.cpp
-	$(PP) $(CFLAGS) src\board.cpp -o $@
-
-build\board_print_plain.o:src\board_print_plain.cpp
-	$(PP) $(CFLAGS) src\board_print_plain.cpp -o $@
+test:
+	./stdout
 	
-.PHONY:clean
-
 clean:
-	rm -rf build\*.o bin\chessS
+	rm stdout.exe stdout
