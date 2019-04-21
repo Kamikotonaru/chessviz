@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string.h>
+#include <cstdio>
 #include "board.h"
 #include "board_print_plain.h"
 using namespace std;
@@ -60,7 +60,7 @@ int main() {
 	if (i == 1)
 		Move(stepis, chess_borad);
 	else if (i == 0)
-		printf("Error input, try again");
+		cout<<"Error input, try again"<<endl;
 
 	PrintBoard(chess_borad);
 	
