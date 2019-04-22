@@ -1,5 +1,5 @@
 *.exe
 clang-format
 .vscode
-.o
+*.o
 .gitignore
