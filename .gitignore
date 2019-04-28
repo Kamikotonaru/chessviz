@@ -1,5 +1,8 @@
 *.exe
-clang-format
+.clang-format
 .vscode
-*.o
 .gitignore
+build/src/*.o
+build/test/*.o
+clean
+
