@@ -128,10 +128,10 @@ int Move(char* steps, char (*chessB)[9])
             chessB[xy[1]][xy[0]] = ' ';
             chessB[xy[3]][xy[2]] = tmp;
             ok++;
-        }else {
+        } else {
             return 0;
         }
-    }else {
+    } else {
         return 0;
     }
     // black
@@ -141,15 +141,15 @@ int Move(char* steps, char (*chessB)[9])
             chessB[xy[5]][xy[4]] = ' ';
             chessB[xy[7]][xy[6]] = tmp;
             ok++;
-        }else {
+        } else {
             return 0;
         }
-    }else {
+    } else {
         return 0;
     }
     if (ok == 2) {
         return 1;
-    }else {
+    } else {
         return 0;
     }
 }
