@@ -3,3 +3,4 @@
 .vscode
 build/src/*.o
 build/test/*.o
+clean
