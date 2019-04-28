@@ -1,3 +1,5 @@
 *.exe
-clang-format
+.clang-format
 .vscode
+build/src/*.o
+build/test/*.o
