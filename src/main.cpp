@@ -5,15 +5,15 @@
 using namespace std;
 int main()
 {
-    char chess_borad[9][9] = {{ '8', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R' },
-			       { '7', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P' },
-		  	       { '6', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' },
-			       { '5', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' },
-		               { '4', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' },
-			       { '3', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' },
-		    	       { '2', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p' },
-			       { '1', 'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r' },
-			       { ' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' }};
+    char chess_borad[9][9] = {{'8', 'R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R'},
+			       {'7', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+		  	       {'6', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+			       {'5', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		               {'4', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+			       {'3', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+		    	       {'2', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+			       {'1', 'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'},
+			       {' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'}};
 
     char* step = new char[80];
     cout << "Input step" << endl;
@@ -53,13 +53,13 @@ int main()
     char* charThereB = strtok(thereBlack, "12345678");
     char* intThereB = strtok(thereIntB, "abcdefgh");
 
-    char stepis[] = {*(charHereW), 
-		      *(intHereW), 
-		      *(charThereW), 
+    char stepis[] = {*(charHereW),
+		      *(intHereW),
+		      *(charThereW),
 		      *(intThereW),
-		      *(charHereB), 
-		      *(intHereB), 
-		      *(charThereB), 
+		      *(charHereB),
+		      *(intHereB),
+		      *(charThereB),
 		      *(intThereB)};
 
     int i = 1;
