@@ -15,20 +15,20 @@ int main()
                               {'1', 'r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'},
                               {' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'}};
 
-    char *step = new char[80];
+    char* step = new char[80];
     cout << "Input step" << endl;
     cin.getline(step, 80);
 
-    char *stepBlack = strtok(step, " ");
-    char *stepWhite = stepBlack;
+    char* stepBlack = strtok(step, " ");
+    char* stepWhite = stepBlack;
     stepBlack = strtok(NULL, " ");
 
-    char *thereWhite = strtok(stepWhite, "-");
-    char *hereWhite = thereWhite;
+    char* thereWhite = strtok(stepWhite, "-");
+    char* hereWhite = thereWhite;
     thereWhite = strtok(NULL, " ");
 
-    char *thereBlack = strtok(stepBlack, "-");
-    char *hereBlack = thereBlack;
+    char* thereBlack = strtok(stepBlack, "-");
+    char* hereBlack = thereBlack;
     thereBlack = strtok(NULL, " ");
 
     char hereIntW[3];
@@ -41,17 +41,17 @@ int main()
     strcpy(hereIntB, hereBlack);
     strcpy(thereIntB, thereBlack);
 
-    char *charHereW = strtok(hereWhite, "12345678");
-    char *intHereW = strtok(hereIntW, "abcdefgh");
+    char* charHereW = strtok(hereWhite, "12345678");
+    char* intHereW = strtok(hereIntW, "abcdefgh");
 
-    char *charThereW = strtok(thereWhite, "12345678");
-    char *intThereW = strtok(thereIntW, "abcdefgh");
+    char* charThereW = strtok(thereWhite, "12345678");
+    char* intThereW = strtok(thereIntW, "abcdefgh");
 
-    char *charHereB = strtok(hereBlack, "12345678");
-    char *intHereB = strtok(hereIntB, "abcdefgh");
+    char* charHereB = strtok(hereBlack, "12345678");
+    char* intHereB = strtok(hereIntB, "abcdefgh");
 
-    char *charThereB = strtok(thereBlack, "12345678");
-    char *intThereB = strtok(thereIntB, "abcdefgh");
+    char* charThereB = strtok(thereBlack, "12345678");
+    char* intThereB = strtok(thereIntB, "abcdefgh");
 
     char stepis[] = {*(charHereW),
                      *(intHereW),
